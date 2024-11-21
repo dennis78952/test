@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTable Responsive Example</title>
+
+    <!-- DataTables CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"> -->
+    <link rel="stylesheet" href="datatables.min.css">
+    <!-- DataTables Responsive CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css"> -->
+
+    <!-- jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+    <script src="jquery.min-3.2.1.js"></script>
+    <!-- DataTables JS -->
+    <!-- <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script> -->
+    <script src="datatables.min.js"></script>
+    <!-- DataTables Responsive JS -->
+    <!-- <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script> -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>DataTable with Responsive Plugin</h1>
+
+<table id="example" class="display nowrap" style="width:100%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>John</td><td>Doe</td><td>john.doe@example.com</td><td>123-456-7890</td><td>New York</td><td>USA</td><td>ABC Corp</td><td>Developer</td><td>$100,000</td></tr>
+        <tr><td>2</td><td>Jane</td><td>Smith</td><td>jane.smith@example.com</td><td>987-654-3210</td><td>Los Angeles</td><td>USA</td><td>XYZ Inc</td><td>Manager</td><td>$120,000</td></tr>
+        <tr><td>3</td><td>Michael</td><td>Johnson</td><td>michael.johnson@example.com</td><td>555-123-4567</td><td>Chicago</td><td>USA</td><td>Tech Solutions</td><td>Analyst</td><td>$85,000</td></tr>
+        <tr><td>4</td><td>Emily</td><td>Clark</td><td>emily.clark@example.com</td><td>444-987-6543</td><td>Houston</td><td>USA</td><td>HealthCorp</td><td>Consultant</td><td>$95,000</td></tr>
+        <tr><td>5</td><td>Daniel</td><td>Lewis</td><td>daniel.lewis@example.com</td><td>666-777-8888</td><td>Phoenix</td><td>USA</td><td>FinancePro</td><td>Accountant</td><td>$75,000</td></tr>
+        <tr><td>6</td><td>Emma</td><td>Walker</td><td>emma.walker@example.com</td><td>999-111-2222</td><td>Miami</td><td>USA</td><td>RetailWorld</td><td>HR</td><td>$80,000</td></tr>
+        <tr><td>7</td><td>James</td><td>Wilson</td><td>james.wilson@example.com</td><td>222-333-4444</td><td>Seattle</td><td>USA</td><td>AutoMotives</td><td>Engineer</td><td>$110,000</td></tr>
+        <tr><td>8</td><td>Linda</td><td>Young</td><td>linda.young@example.com</td><td>333-444-5555</td><td>San Francisco</td><td>USA</td><td>CloudTech</td><td>Designer</td><td>$105,000</td></tr>
+        <tr><td>9</td><td>Chris</td><td>Brown</td><td>chris.brown@example.com</td><td>777-888-9999</td><td>Boston</td><td>USA</td><td>EduCare</td><td>Teacher</td><td>$65,000</td></tr>
+        <tr><td>10</td><td>Amy</td><td>Moore</td><td>amy.moore@example.com</td><td>888-999-0000</td><td>Dallas</td><td>USA</td><td>HealthPlus</td><td>Nurse</td><td>$70,000</td></tr>
+        <tr><td>11</td><td>David</td><td>Lee</td><td>david.lee@example.com</td><td>444-555-6666</td><td>Las Vegas</td><td>USA</td><td>BankSecure</td><td>Banker</td><td>$90,000</td></tr>
+        <tr><td>12</td><td>Sarah</td><td>Miller</td><td>sarah.miller@example.com</td><td>111-222-3333</td><td>Austin</td><td>USA</td><td>LawFirm</td><td>Attorney</td><td>$150,000</td></tr>
+        <tr><td>13</td><td>Robert</td><td>Anderson</td><td>robert.anderson@example.com</td><td>999-222-1111</td><td>Denver</td><td>USA</td><td>ConsultGroup</td><td>Consultant</td><td>$115,000</td></tr>
+        <tr><td>14</td><td>Jessica</td><td>Martinez</td><td>jessica.martinez@example.com</td><td>666-333-5555</td><td>San Diego</td><td>USA</td><td>CareHome</td><td>Therapist</td><td>$85,000</td></tr>
+        <tr><td>15</td><td>Matthew</td><td>Harris</td><td>matthew.harris@example.com</td><td>123-321-4567</td><td>Atlanta</td><td>USA</td><td>BuildPlus</td><td>Architect</td><td>$95,000</td></tr>
+        <tr><td>16</td><td>Karen</td><td>Jones</td><td>karen.jones@example.com</td><td>789-654-1234</td><td>Portland</td><td>USA</td><td>DesignHub</td><td>Designer</td><td>$100,000</td></tr>
+        <tr><td>17</td><td>Steven</td><td>Garcia</td><td>steven.garcia@example.com</td><td>321-987-4567</td><td>Charlotte</td><td>USA</td><td>LogiCorp</td><td>Logistics</td><td>$85,000</td></tr>
+        <tr><td>18</td><td>Mary</td><td>White</td><td>mary.white@example.com</td><td>987-123-6547</td><td>Orlando</td><td>USA</td><td>PharmaPlus</td><td>Pharmacist</td><td>$120,000</td></tr>
+        <tr><td>19</td><td>Paul</td><td>Martin</td><td>paul.martin@example.com</td><td>654-789-3214</td><td>Minneapolis</td><td>USA</td><td>FoodCorp</td><td>Chef</td><td>$80,000</td></tr>
+        <tr><td>20</td><td>Susan</td><td>Lopez</td><td>susan.lopez@example.com</td><td>432-567-7890</td><td>San Antonio</td><td>USA</td><td>WellnessCo</td><td>Trainer</td><td>$70,000</td></tr>
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable({
+            responsive: true
+        });
+    });
+</script>
+
+</body>
+</html>
